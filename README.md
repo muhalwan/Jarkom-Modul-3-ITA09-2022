@@ -4,11 +4,10 @@ Nama Kelompok :
  1. Muhammad Alwan 5027201019 (Nomor 1-7)
  2. Rayhan Kurnia Alunantara Wijaya 5027201030 (Nomor 10-11)
 
-## Nomor 1 dan @
+## Nomor 1 dan 2
 Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server. Dan Ostania sebagai DHCP Relay.
 
 ## Bentuk topologi: 
-
 ![](https://lh5.googleusercontent.com/yp4zZrp3ROKWHb06a7dmgksgjBs4Jp1b0NTBJt81ur6kezKsYs9im3Nry5E8XzGdn4p7ElHIxm-URLUp_SuLahFx7RbM5XfGZFqiBFFg30EPx6OQ_MaPRT0QNPkwDCRsRM0WiWxeUxhVmq53PtQR2pgreLy66NcyBCNPOXaDDP97EaJIGVVCX5G3OKyMIA)
 
 Command yang akan dijalankan pada node ostania adalah: 
@@ -19,6 +18,7 @@ Lalu saat install isc-dhcp-relay kita manjadikan Westalis dengan IP 10.44.2.4 se
 
 ![](https://lh3.googleusercontent.com/293-xwz6ZrkguNhZwA3_RBk6n_0Olbh9pt6xlxNlpqjeqN2pwkAR1T0gnWRGljAiAE9bIsud1CBZHhoDIuTSI41nxKZrtMJHW5107TyXbP9SVlz217D5-Z-gKkxmZnw0i1oSzmXiAl-ltRYd5wbIxQN33dzJFyslwuCWt6Vx4HroWoBtjO3kCQpwhsI18g)
 
+## Nomor 3-7
 Ada beberapa kriteria yang ingin dibuat oleh Loid dan Franky, yaitu:
 
 1.  Semua client yang ada HARUS menggunakan konfigurasi IP dari DHCP Server.
@@ -32,7 +32,6 @@ Ada beberapa kriteria yang ingin dibuat oleh Loid dan Franky, yaitu:
 5.  Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 5 menit sedangkan pada client yang melalui Switch3 selama 10 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 115 menit. (6)
 
 ## Westalis
-
 Pertama kita akan membuat nameserver 192.168.122.1 sehingga westalis dapat terhubung ke internet dan mendownload isc-dhcp-relay
 
 ![](https://lh4.googleusercontent.com/_eDeHrtDAcUIPsePg6Lk9z9RYPxS_4Qg5CtmnjaA-2b5PSK7B98XtjlwnCGKgmqGi54stNLjxLBPxF4_naWOwm7-3gw0ySkNuIpk_2zAcjgPmKgA8-l9CM5SLSx3sEqIClHGBJZiTFTdwpLtfHeUssX7qomnKw8KL7Z62qDeET83dMcWOMn1n1uqPbF7ew)
@@ -95,7 +94,8 @@ NewstonCastle
 
 Pada hasil testing diatas dapat terlihat bahwa setiap dhcp client mendapatkan ip yang sesuai dengan range yang telah dibagikan oleh dhcp server dan mendapatkan akses internet lewat dns server dengan ip 10.44.2.2
 
-Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP [prefix IP].3.13 (7).
+## Nomor 7
+Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP [prefix IP].3.13.
 
 Pertama dengan command ip a di node Eden kita dapat melihat hwaddress pada Eden
 
@@ -143,7 +143,6 @@ Setelah proxy Berlint diatur oleh Loid, dia melakukan pengujian dan mendapatkan 
 ![](https://ia904707.us.archive.org/4/items/screenshot-2022-11-12-163829/Screenshot%202022-11-12%20163829.png)
 
 x: tidak
-
 v: iya
 
 Sesuai dengan perintah diatas, terdapat 5 ketentuan yang harus dipenuhi
