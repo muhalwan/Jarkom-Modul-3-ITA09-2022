@@ -115,6 +115,8 @@ Pada Westalis, kita tambahkan host Eden pada /etc/dhcp/dhcpd.conf yang fixed-add
 
 Pada hasil testing diatas, Eden telah berhasil mendapatkan fixed ip address yang telah ditentukan sebelumnya.
 
+##
+
 SSS, Garden, dan Eden digunakan sebagai client Proxy agar pertukaran informasi dapat terjamin keamanannya, juga untuk mencegah kebocoran data.
 
 Pada Proxy Server di Berlint, Loid berencana untuk mengatur bagaimana Client dapat mengakses internet. Artinya setiap client harus menggunakan Berlint sebagai HTTP & HTTPS proxy. Adapun kriteria pengaturannya adalah sebagai berikut:
