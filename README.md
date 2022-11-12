@@ -185,5 +185,6 @@ Client perlu dilarang untuk mengakses web yang hanya http atau hanya menggunakan
 
 Jika sudah, restart squid berlint, dan lakukan lynx google.com di salah satu client dari proxy server. Jika berhasil, maka seharusnya client tidak dapat mengakses website tersebut.
 
-#### Kendala
+
+### Kendala
 Tidak ada
