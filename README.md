@@ -1,11 +1,13 @@
 # Jarkom-Modul-3-ITA09-2022
 
 Nama Kelompok :
- 1. Muhammad Alwan 5027201019
+ 1. Muhammad Alwan 5027201019 (Nomor 1-7)
+ 2. Rayhan Kurnia Alunantara Wijaya 5027201030 (Nomor 10-11)
 
-(1&2)  Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server. Dan Ostania sebagai DHCP Relay.
+## Nomor 1 dan @
+Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server. Dan Ostania sebagai DHCP Relay.
 
-Bentuk topologi: 
+## Bentuk topologi: 
 
 ![](https://lh5.googleusercontent.com/yp4zZrp3ROKWHb06a7dmgksgjBs4Jp1b0NTBJt81ur6kezKsYs9im3Nry5E8XzGdn4p7ElHIxm-URLUp_SuLahFx7RbM5XfGZFqiBFFg30EPx6OQ_MaPRT0QNPkwDCRsRM0WiWxeUxhVmq53PtQR2pgreLy66NcyBCNPOXaDDP97EaJIGVVCX5G3OKyMIA)
 
@@ -29,7 +31,7 @@ Ada beberapa kriteria yang ingin dibuat oleh Loid dan Franky, yaitu:
 
 5.  Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 5 menit sedangkan pada client yang melalui Switch3 selama 10 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 115 menit. (6)
 
-Westalis
+## Westalis
 
 Pertama kita akan membuat nameserver 192.168.122.1 sehingga westalis dapat terhubung ke internet dan mendownload isc-dhcp-relay
 
@@ -55,13 +57,13 @@ Selanjutnya kita akan setting switch3 dengan menambahkan konfig sebagai berikut:
 
 range sudah diatur sesuai dengan ketentuan soal. Lalu, untuk DNS sudah diarahkan ke IP WISE 10.44.2.2 dan untuk waktu meminjam alamat IP ke client adalah 10 menit atau 600 detik dengan waktu maksimal adalah 115 menit atau 6900 detik.
 
-Client
+## Client
 
 Kita akan menerapkan settingan DHCP pada client dengan merubah settingan pada /etc/network/interfaces seluruh client menjadi seperti berikut:
 
 ![](https://lh6.googleusercontent.com/8LUrGh3q0nNWk9FLpa1hx8DHm1of11yWCp_0uTju1Ag7tqxMrsTPy9I2WmP0iUiI58xaZXlBu5j_G17XFu4mYQ4PsAC12Du_8otbakk7Zv-p1EvdMTEo93kzzrxrPSPp5tOtisd1Kni9hp4N556Rc4PaME2Ekqf7Mh_bqj5TqkxpU-4MnCDdz1AmiHChSA)
 
-Wise
+## Wise
 
 Kita akan membuat seluruh client dapat mengakses internet, kita akan mengkonfig Wise
 
@@ -73,7 +75,7 @@ Kita akan membuat DNS forwarder pada wise dengan membuat node wise dapat mengaks
 
 ![](https://lh5.googleusercontent.com/ZEn6AXQ1tAXgMwyqHlfHlTajXQBxK4ZcQQbvSHatz7-gi7QhHzY5hsCCkoRhsvgytNlu_4KUqwOD2PKYYBodYUEkjpoDMjMaI2tMaDqebyJ-wLCVGZAfgKBBKjnJuL_i8sNLVrZxFd6dJEDoP32amSJ490bZ1mXQSd6pnnQ1mwbRO5rAwSfwxkTzEnlBYg)
 
-Testing
+## Testing
 
 SSS
 
@@ -107,7 +109,7 @@ Pada Westalis, kita tambahkan host Eden pada /etc/dhcp/dhcpd.conf yang fixed-add
 
 ![](https://lh3.googleusercontent.com/N4d1ltJ5M6Ihb5-OMVAJKu635KdloChBeC2HdCiufAOqviND4OniZSHSYJWFr7Uw3VacRWCT0isqkTjqUDDUmfpqFE0fEXWHHkLpiKdhFiBRhbZcf4Dev9S9MPyCyj8a-c2x7V98wtB8QlUEPXhza63xvzTaF4nxWLGHcq9tLD9fCjOAsSskblTke1Wptw)
 
-Testing
+## Testing
 
 ![](https://lh4.googleusercontent.com/bE4QeUfoEN5cqPTkMlHvs89rwTOimVaSVSgo9iwrDio4yQxO2Xo9u24ZYvqjCj9wzE9FA8ufonnmmhUms2Gj6kPJFrxCcKemW2es6XlD0YwP2aPX5nF0azQtP9bQkdpV9SIKz59n4BFtQKdqmirsVSJerrXWP7KY8xi3jLNWPiP3iAYl9JtbPSGun7Hd8A)
 
@@ -146,7 +148,8 @@ v: iya
 
 Sesuai dengan perintah diatas, terdapat 5 ketentuan yang harus dipenuhi
 
-Untuk ketentuan keempat(4), diberikan ketentuan berupa pembatasan internet sebesar 128kbps. Disini kita akan melakukan sesuai dengan modul dimana untuk membatasi bandwith kita harus membuat file dengan command nano /etc/squid/acl-bandwidth.conf.
+## Ketentuan 4
+Diberikan ketentuan berupa pembatasan internet sebesar 128kbps. Disini kita akan melakukan sesuai dengan modul dimana untuk membatasi bandwith kita harus membuat file dengan command nano /etc/squid/acl-bandwidth.conf.
 
 Kemudian, kita masukkan script :
 
@@ -174,7 +177,8 @@ Jika sudah restart squid, dan lakukan speed tes. Berikut adalah speedtest sebelu
 
 ![](https://lh6.googleusercontent.com/dlxKiJEAfdEPwjrb2fKd3bZFIlvDb4Tr_yIhx7011lsEvulJGHUVQ5_JgsyImuwzgLxJg-9jBQlYpYVL1Mf6Wcads-67YBcnnw4NKcMJeR_7I3hPtiXIed2-e4AsbdxK8waHDL3G7eqfK3s3T7YlSUVzSFdL8RtQDl689XoD9LksA7Vw9cu-Nsc1DMX6kw)
 
-Untuk ketentuan ketiga(3), client perlu dilarang untuk mengakses web yang hanya http atau hanya menggunakan https. Disini sesuai dengan modul, kita membuat agar hanya website dengan https yang bisa diakses dengan mengubah file nano /etc/squid/squid.conf. Disini kita bisa melihat bahwa http_access allow all diubah menjadi http_access deny all. 
+## Ketentuan 3
+Client perlu dilarang untuk mengakses web yang hanya http atau hanya menggunakan https. Disini sesuai dengan modul, kita membuat agar hanya website dengan https yang bisa diakses dengan mengubah file nano /etc/squid/squid.conf. Disini kita bisa melihat bahwa http_access allow all diubah menjadi http_access deny all. 
 
 ![](https://lh5.googleusercontent.com/Br_RdgTH9AxSF4wUBeA_eMJEVlEVhmVCO2Ev0WC8PVilLK4jUEix7nHrBlTx-iP1FGzG5t5wc5gmmlxPmA94g1Zo3GBpPlBtXYcatQzAFB0gQmn6vfQ8A89rTkw5nsebvYjiJASEiXrZIue87utzpT5nX2tm4lh-wpY0j4g0KeL15dHjf75CNDTit7C_wg)
 
