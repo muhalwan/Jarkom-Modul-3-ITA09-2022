@@ -1,5 +1,8 @@
 # Jarkom-Modul-3-ITA09-2022
 
+Nama Kelompok :
+ 1. Muhammad Alwan 5027201019
+
 (1&2)  Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server. Dan Ostania sebagai DHCP Relay.
 
 Bentuk topologi: 
@@ -135,91 +138,7 @@ export http_proxy="[http://ip-proxy-server:port](about:blank)", dengan ip proxy 
 5.  Setelah diterapkan, ternyata peraturan nomor (4) mengganggu produktifitas saat hari kerja, dengan demikian pembatasan kecepatan hanya diberlakukan untuk pengaksesan internet pada hari libur\
 Setelah proxy Berlint diatur oleh Loid, dia melakukan pengujian dan mendapatkan hasil sesuai tabel berikut.
 
-|
-
-Aksi
-
- |
-
-Senin (10.00)
-
- |
-
-Senin (20.00)
-
- |
-
-Sabtu (10.00)
-
- |
-|
-
-Akses internet (HTTP)
-
- |
-
-x
-
- |
-
-x
-
- |
-
-x
-
- |
-|
-
-Akses internet (HTTPS)
-
- |
-
-x
-
- |
-
-v
-
- |
-
-v
-
- |
-|
-
-Akses loid-work.com dan franky-work.com
-
- |
-
-v
-
- |
-
-x
-
- |
-
-x
-
- |
-|
-
-Speed limit (128Kbps)
-
- |
-
-tidak bisa akses
-
- |
-
-x (speed tidak dibatasi)
-
- |
-
-v 
-
- |
+![](https://ia904707.us.archive.org/4/items/screenshot-2022-11-12-163829/Screenshot%202022-11-12%20163829.png)
 
 x: tidak
 
