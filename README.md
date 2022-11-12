@@ -184,3 +184,6 @@ Client perlu dilarang untuk mengakses web yang hanya http atau hanya menggunakan
 ![](https://lh5.googleusercontent.com/Br_RdgTH9AxSF4wUBeA_eMJEVlEVhmVCO2Ev0WC8PVilLK4jUEix7nHrBlTx-iP1FGzG5t5wc5gmmlxPmA94g1Zo3GBpPlBtXYcatQzAFB0gQmn6vfQ8A89rTkw5nsebvYjiJASEiXrZIue87utzpT5nX2tm4lh-wpY0j4g0KeL15dHjf75CNDTit7C_wg)
 
 Jika sudah, restart squid berlint, dan lakukan lynx google.com di salah satu client dari proxy server. Jika berhasil, maka seharusnya client tidak dapat mengakses website tersebut.
+
+### Kendala
+Tidak ada
